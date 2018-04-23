@@ -15,9 +15,9 @@
   <header class="header">
     <nav>
       <ul class="main-nav">
-        <li>
+        <li class="logo">
           <a href="index.html">
-            <img src="img/logo.png" alt="Логотип" width="185" heigh="56">
+            <img src="img/logo.png" alt="Логотип" width="185" height="56">
           </a>
         </li>
         <li>
@@ -42,38 +42,42 @@
           <a href="#">login</a>
         </li>
         <li>
-          <a href="#">sign up</a>
+          <a class="sign-up" href="#">sign up</a>
         </li>
       </ul>
     </nav>
     <section class="header-slider">
-      <ul class="slider-nav">
+      <div class="wrapper">
+        <p class="title-top">we're a independent mobile ad
+          <br>exchange focused on video ads.</p>
+        <p>We guarantee our clients will learn twice as</p>
+        <p>much than the others. Otherwise we'll return your</p>
+        <p>money</p>
+        <a class="button sign-up" href="#">sign up</a>
+        <a class="button readmore" href="#">readmore</a>
+      </div>
+      <input class="visually-hidden control-item-header" type="radio" name="header-toggle" id="slider-1">
+      <input class="visually-hidden control-item-header" type="radio" name="header-toggle" id="slider-2" checked>
+      <input class="visually-hidden control-item-header" type="radio" name="header-toggle" id="slider-3">
+      <input class="visually-hidden control-item-header" type="radio" name="header-toggle" id="slider-4">
+      <input class="visually-hidden control-item-header" type="radio" name="header-toggle" id="slider-5">
+      <ul class="slider-controls">
         <li>
-          <input type="radio" name="header-toggle" id="slider-1">
+          <label for="slider-1">Первый</label>
         </li>
         <li>
-          <input type="radio" name="header-toggle" id="slider-2" checked>
+          <label for="slider-2">Второй</label>
         </li>
         <li>
-          <input type="radio" name="header-toggle" id="slider-3">
+          <label for="slider-3">Третий</label>
         </li>
         <li>
-          <input type="radio" name="header-toggle" id="slider-4">
+          <label for="slider-4">Четверты</label>
         </li>
         <li>
-          <input type="radio" name="header-toggle" id="slider-5">
+          <label for="slider-5">Пятый</label>
         </li>
       </ul>
-      <a href="#">
-        <img src="" alt="slider-logo">
-      </a>
-      <p class="title-top">we're a independent mobile ad
-        <br>exchange focused on video ads.</p>
-      <p>We guarantee our clients will earn twice as</p>
-      <p>much that the others. Otherwise we'll return your</p>
-      <p>money</p>
-      <a class="button" href="#">sing up</a>
-      <a class="button" href="#">readmore</a>
     </section>
   </header>
   <main>
@@ -86,31 +90,30 @@
       <p>dynamically test ad networks against each</p>
       <p>other and visualize their combined</p>
       <p>perfomance.</p>
-      <a class="button" href="#">sing up</a>
-      <a class="button" href="#">try demo</a>
-      <img src="" alt="iMac" width="647" height="518">
+      <a class="button sign-up" href="#">sign up</a>
+      <a class="button try-demo" href="#">try demo</a>
     </section>
     <section class="partners">
       <h2 class="visually-hidden">Our partners</h2>
       <p>transparent</p>
       <p>mediation of premium ad networks</p>
-      <ul>
-        <li>
+      <ul class="partners-list">
+        <li class="partners-item">
           <a href="#">
             themeforest
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="#">
             activeden
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="#">
             audiojungle
           </a>
         </li>
-        <li>
+        <li class="partners-item">
           <a href="#">
             graphicriver
           </a>
@@ -120,13 +123,13 @@
     </section>
     <section class="revenue">
       <h2 class="visually-hidden">revenue</h2>
-      <p>set your revenue to autopilot</p>
-      <ul>
-        <li>aitomatic mediation</li>
+      <p class="revenue-title">set your revenue to autopilot</p>
+      <ul class="revenue-top-list">
+        <li>automatic mediation</li>
         <li>smart waterfall</li>
         <li>manual override</li>
       </ul>
-      <ul>
+      <ul class="revenue-bottom-list">
         <li>
           Using automated, closed loop machine learning. Adappio gets rid of the need to constantly check your dashboard.
         </li>
@@ -137,64 +140,76 @@
           Every autopilot system needs comprehensive manual override controls. Take the reins for special situations
         </li>
       </ul>
-      <a href="#">sign up</a>
+      <a class="button sign-up" href="#">sign up</a>
     </section>
     <section class="advantage">
       <h2 class="visually-hidden">advantage</h2>
-      <p>the mostpowerful</p>
-      <p>Simple & Elegant User Interface</p>
-      <p>Meaningful dashboard - manage your</p>
-      <p>revenue with clean, easy to use</p>
-      <p>dashboards.</p>
-      <p>Yourlogo intuitive & easy-to-use</p>
-      <p>interface</p>
-      <a href="#">sign up</a>
-      <img src="" alt="browser" width="965" height="570">
+      <p class="advantage-title">the most powerful</p>
+      <p class="advantage-subtitle">Simple & Elegant User Interface</p>
+      <p class="advantage-text">Meaningful dashboards &ndash; manage your
+        <br>revenue with clean, easy to use
+        <br>dashboards.
+        <p class="advantage-message">Yourlogo intuitive & easy-to-use interface
+        </p>
+        <a class="button sign-up" href="#">sign up</a>
     </section>
     <section class="supported">
       <h2 class="visually-hidden">supported</h2>
-      <p>supported ad formats</p>
-      <img src="" alt="supported ad formats" width="1920" height="1060">
-      <ul class="slider-nav">
+      <p class="supported-title">supported ad formats</p>
+      <input class="visually-hidden control-item-supported" type="radio" name="supported-toggle" id="slider-11">
+      <input class="visually-hidden control-item-supported" type="radio" name="supported-toggle" id="slider-21" checked>
+      <input class="visually-hidden control-item-supported" type="radio" name="supported-toggle" id="slider-31">
+      <input class="visually-hidden control-item-supported" type="radio" name="supported-toggle" id="slider-41">
+      <input class="visually-hidden control-item-supported" type="radio" name="supported-toggle" id="slider-51">
+      <ul class="slider-controls-supported">
         <li>
-          <input type="radio" name="toggle" id="slider-1">
+          <label for="slider-11">Первый</label>
         </li>
         <li>
-          <input type="radio" name="toggle" id="slider-2" checked>
+          <label for="slider-21">Второй</label>
         </li>
         <li>
-          <input type="radio" name="toggle" id="slider-3">
+          <label for="slider-31">Третий</label>
         </li>
         <li>
-          <input type="radio" name="toggle" id="slider-4">
+          <label for="slider-41">Четверты</label>
         </li>
         <li>
-          <input type="radio" name="toggle" id="slider-5">
+          <label for="slider-51">Пятый</label>
         </li>
       </ul>
+      <img src="img/maket.png" alt="Не работающий слайдер" width="1920" height="500">
     </section>
-    <section class="contact">
-      <p>yourlogo products</p>
-      <p>provide necessary infrastruture for app monetization through video ads. More then 200</p>
-      <p>million people worldwide see a Vungle ad each month.</p>
-      <a href="#">contact us</a>
+    <section class="contacts">
+      <p class="contacts-title">your<span>logo</span> products</p>
+      <p class="contacts-text">provide necessary infrastruture for app monetization through video ads. More then 200</p>
+      <p class="contacts-text">million people worldwide see a Vungle ad each month.</p>
+      <a class="button sign-up" href="#">contact us</a>
 
     </section>
   </main>
-  <footer class="footer" >
-    <a href="#">Yourlogo 2015</a>
-    <ul>
-      <li>
-        <a href="#">facebook</a>
+  <footer class="footer">
+    <a class="copyright" href="#">&copy; Yourlogo 2015</a>
+    <ul class='social-list'>
+      <li class="social-item">
+        <a href="#">
+          <img src="img/facebook.png" alt="facebook" width="43" height="43">
+        </a>
       </li>
-      <li>
-        <a href="#">twitter</a>
+      <li class="social-item">
+        <a href="#">
+          <img src="img/twitter.png" alt="twitter" width="43" height="43">
+        </a>
       </li>
-      <li>
-        <a href="#">vk</a>
+      <li class="social-item">
+        <a href="#">
+          <img src="img/dribbble.png" alt="drebbble" width="43" height="43">
+        </a>
       </li>
-      <li>
-        <a href="#">youtube</a>
+      <li class="social-item">
+        <a href="#">
+          <img src="img/behance.png" alt="behance" width="43" height="43">
+        </a>
       </li>
     </ul>
   </footer>
